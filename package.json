@@ -17,7 +17,7 @@
     "@nuxtjs/axios": "^5.13.6",
     "@nuxtjs/pwa": "^3.3.5",
     "core-js": "^3.19.3",
-    "highcharts-vue": "^1.4.0",
+    "highcharts-vue": "^1.4.3",
     "nuxt": "^2.15.8",
     "nuxt-highcharts": "^2.0.3",
     "nuxt-leaflet": "0.0.27",
