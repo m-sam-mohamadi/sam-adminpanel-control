@@ -1,0 +1,328 @@
+@font-face {
+  font-family: 'vazir';
+  src: url('../fonts/vazir.ttf');
+}
+
+// all global styles
+* {
+  font-family: 'vazir' !important;
+}
+
+body {
+  // background: rgba(170, 220, 243, 0.8);
+  // background: linear-gradient(360deg, rgba(76, 122, 243, 1) 0%, rgba(170, 220, 243, 0.8) 50%);
+  // background: -moz-linear-gradient(90deg, rgba(76, 122, 243, 1) 0%, rgba(170, 220, 243, 0.8) 50%);
+  // background: -webkit-linear-gradient(90deg, rgba(76, 122, 243, 1) 0%, rgba(170, 220, 243, 0.8) 50%);
+  // background: -o-linear-gradient(90deg, rgba(76, 122, 243, 1) 0%, rgba(170, 220, 243, 0.8) 50%);
+  // background: -ms-linear-gradient(90deg, rgba(76, 122, 243, 1) 0%, rgba(170, 220, 243, 0.8) 50%);
+  // filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr="rgba(76,122,243,1)", endColorstr="rgba(170,220,243,0.8)");
+  // background-repeat: no-repeat;
+  // background-attachment: fixed;
+  // height: 1%;
+
+}
+
+
+// native DOM elements styles
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  margin: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 102, 102);
+  border-radius: 10px;
+}
+
+// edit .v-application for change native styles
+.v-application {
+  padding-bottom: 60px;
+  background-color: transparent !important;
+
+
+  background-image: url('../images/bg6.jpg') !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+
+  .v-data-table__mobile-row__cell {
+    padding: 0 !important;
+  }
+
+
+  .v-card {
+    box-shadow: 0 0 22px -2px rgba(0, 0, 0, 0.3) !important;
+
+    &.elevation-6 {
+      box-shadow: 0 0 22px -2px rgba(0, 0, 0, 0.3) !important;
+    }
+
+    &.elevation-4 {
+      box-shadow: 0 0 22px -2px rgba(0, 0, 0, 0.3) !important;
+    }
+
+    &.elevation-2 {
+      box-shadow: 0 0 22px -2px rgba(0, 0, 0, 0.3) !important;
+    }
+  }
+
+
+  tbody {
+    tr:hover {
+      background-color: transparent !important;
+    }
+
+    .v-data-table__selected {
+      background-color: rgba(255, 246, 246, 0.3) !important;
+
+    }
+  }
+
+  .v-pagination {
+    .v-pagination__item {
+      background-color: rgba(255, 246, 246, 0.8) !important;
+
+      &.v-pagination__item--active {
+        background-color: rgba(50, 115, 255, 0.8) !important;
+
+      }
+    }
+
+    .v-pagination__navigation {
+      background-color: rgba(255, 246, 246, 0.8) !important;
+    }
+  }
+
+  .v-data-table__mobile-row__cell {
+    .v-data-table__checkbox {
+      margin-left: -12px;
+
+      // display: flex;
+      // justify-content: start;
+      // .v-input--selection-controls__input {
+      //   // transform: translateX(80vw);
+      // }
+    }
+
+  }
+
+  .v-data-table-header-mobile {
+    .v-data-table-header-mobile__wrapper {
+      direction: ltr;
+      padding-left: 12px;
+      padding-right: 12px;
+
+      .v-data-table-header-mobile__select {
+        padding: 0;
+        margin-left: -25px;
+        min-width: 20px
+      }
+
+      .v-text-field {
+        direction: rtl;
+      }
+    }
+  }
+
+  // thead {
+  //   th {
+  //     direction: ltr !important;
+  //   }
+  // }
+}
+
+.v-overlay,
+.v-overlay__scrim {
+  backdrop-filter: blur($blur_sm) !important;
+}
+
+.v-application .v-list-item__title.text-h6 {
+  font-family: 'vazir' !important;
+}
+
+.v-application .v-btn__content {
+  letter-spacing: 0 !important;
+}
+
+
+// theme dark config
+.vpd-container,
+.vpd-content {
+  border-radius: 12px !important;
+  overflow: hidden !important;
+}
+
+.highcharts-background {
+  fill: transparent;
+}
+
+.v-application.theme--dark {
+  background-image: url('../images/bg3.jpg') !important;
+
+  .dateAndTime {
+    background: rgb(9, 16, 34);
+
+  }
+
+  .v-pagination {
+    .v-pagination__item {
+      background-color: rgb(12, 21, 43) !important;
+
+      &.v-pagination__item--active {
+        background-color: rgb(31, 67, 158) !important;
+
+      }
+    }
+
+    .v-pagination__navigation {
+      background-color: rgb(12, 21, 43) !important;
+    }
+  }
+
+  .vpd-body {
+    background: #171b33;
+    border-radius: 12px !important;
+
+  }
+
+  .highcharts-subtitle {
+    fill: rgb(211, 211, 211) !important;
+  }
+
+  .highcharts-axis-labels text {
+    fill: rgb(211, 211, 211) !important;
+
+  }
+
+
+  .highcharts-menu {
+    background-color: rgba($color: rgb(9, 20, 48), $alpha: 0.4) !important;
+    box-shadow: 0 0 20px -4px rgba($color: #000000, $alpha: 1) !important;
+    border: none !important;
+    backdrop-filter: blur($blur_md);
+
+    li {
+      color: white !important;
+    }
+  }
+
+  .highcharts-axis-title,
+  .highcharts-title {
+    color: white !important;
+    fill: white !important;
+  }
+
+  .blur {
+    backdrop-filter: blur($blur_md) !important;
+    background-color: rgba($color: rgba(2, 15, 37), $alpha: 0.6) !important;
+  }
+
+
+  .v-navigation-drawer,
+  .v-toolbar {
+    background-color: rgba(2, 15, 37, 0.6);
+    backdrop-filter: blur($blur_sm);
+  }
+}
+
+.highcharts-button-box {
+  fill: transparent !important;
+}
+
+.highcharts-menu {
+  border-radius: 10px;
+  backdrop-filter: blur($blur_md);
+  background-color: rgba($color: rgb(255, 255, 255), $alpha: 0.4) !important;
+  overflow: hidden;
+}
+
+//light theme config
+
+.theme--light {
+
+  .v-navigation-drawer,
+  .v-toolbar {
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur($blur_md);
+  }
+
+  // .v-toolbar {
+  //   position: fixed !important;
+  //   width: 100% !important;
+  //   z-index: 100;
+  //   margin-bottom: 30px;
+  //   box-shadow: none !important;
+  // }
+
+}
+
+
+$statuses: (#ff2525,
+  #8a8a8a,
+  #3cdb61);
+
+@for $i from 1 through 3 {
+  .statuser#{$i} {
+    width: 20px;
+    height: 20px;
+    background: nth($statuses, $i);
+    position: relative;
+    border-radius: 50%;
+    z-index: 99;
+
+    &::before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      background: nth($statuses, $i);
+      opacity: 0.4;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      z-index: 1;
+      animation: scale .5s ease-in-out infinite alternate;
+    }
+  }
+}
+
+.statuser2::before {
+  animation: none;
+}
+
+@keyframes scale {
+  0% {
+    width: 50%;
+    height: 50%;
+  }
+
+  100% {
+    width: 140%;
+    height: 140%;
+  }
+}
+
+
+
+.dateAndTime {
+  width: fit-content;
+  padding: 8px;
+  position: fixed;
+  left: 2%;
+  bottom: 5%;
+  background: rgba(248, 248, 248, .6);
+  backdrop-filter: blur($blur_sm);
+  border-radius: 12px;
+  box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.322);
+}
+
+.blur {
+  backdrop-filter: blur($blur_md) !important;
+  background-color: rgba($color: #fff, $alpha: 0.6) !important;
+}

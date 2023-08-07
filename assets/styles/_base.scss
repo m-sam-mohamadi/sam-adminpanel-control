@@ -1,0 +1,39 @@
+//colors
+$primary: #E94560;
+
+
+//variables 
+$blur_sm: 6px;
+$blur_md: 12px;
+$blur_lg: 24px;
+
+
+
+
+//transitions 
+
+.transform-enter-active,
+.transform-leave-active {
+  transition: 0.5s;
+  transform-origin: top;
+}
+
+.transform-enter,
+.transform-leave-to {
+  opacity: 0;
+  transform: translateY(-100px) scale(0.8);
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: 0.2s;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+
+
+//blur class

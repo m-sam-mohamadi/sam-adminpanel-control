@@ -1,0 +1,27 @@
+// Ref: https://github.com/nuxt-community/vuetify-module#customvariables
+//
+// The variables you want to modify 
+@import '~vuetify/src/styles/tools/_functions.sass';
+$material-dark-elevation-colors: () !default;
+$material-dark-elevation-colors: map-deep-merge(('0': #000000,
+    '1': #171b33,
+    '2': #121b30,
+    '3': #16213E,
+    '4': #1A1A2E,
+    '6': #16213E,
+    '8': #0a1324,
+    '12': #111930,
+    '16': #1A1A2E,
+    '24': #1A1A2E),
+  $material-dark-elevation-colors);
+$material-dark: ('background': #1A1A2E);
+$material-light: ('background': #f7f7f7);
+// E94560
+$shadow-key-umbra-opacity: rgba(#000000, 0.2);
+$shadow-key-penumbra-opacity: rgba(#000000, 0.14);
+$shadow-key-ambient-opacity: rgba(#000000, 0.12);
+
+
+
+
+// $border-radius-root: 14px;
