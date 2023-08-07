@@ -18,7 +18,7 @@
     "@nuxtjs/pwa": "^3.3.5",
     "core-js": "^3.19.3",
     "highcharts-vue": "^1.4.0",
-    "nuxt": "^2.15.8",
+    "nuxt": "^3.6.5",
     "nuxt-highcharts": "^2.0.3",
     "nuxt-leaflet": "0.0.27",
     "vue": "^2.6.14",
