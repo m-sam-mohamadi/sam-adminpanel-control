@@ -29,7 +29,7 @@
     "vuetify": "^2.6.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.17.0",
+    "@babel/core": "^7.22.11",
     "@nuxtjs/vuetify": "^1.12.3", 
     "babel-loader": "^8.2.3",
     "vue-styleguidist": "^4.44.15",
